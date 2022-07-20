@@ -1,0 +1,112 @@
+.team {
+    background-color: var(--second-bgc);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media screen and (min-width: 1200px){
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+}
+
+.team-title {
+    font-size: 28px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 30px;
+    @media screen and (min-width: 1200px){
+        font-size: 36px;
+        line-height: 1.17;
+        margin-bottom: 50px;
+    }
+}
+
+.team-list{
+    margin-bottom: -30px;
+    @media screen and (min-width: 768px){
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    @media screen and (min-width: 1200px){
+        flex-wrap: nowrap;
+    }
+}
+
+.team-member {
+    background-color: var(--basic-bgc);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+    0px 1px 1px rgba(0, 0, 0, 0.14), 
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    margin-bottom: 30px;
+
+}
+
+.team-member:nth-child(2n+1){
+    @media screen and (min-width: 768px){
+        margin-right: 30px;
+    }
+
+}
+
+.team-member:not(:last-child){
+    @media screen and (min-width: 1200px){
+        margin-right: 30px;
+    }
+}
+
+.team-image{
+    width: 100%;
+}
+
+.team-info {
+    padding-top: 30px;
+    padding-bottom: 24px;
+}
+
+.team-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 10px;
+}
+
+.team-position {
+    color: var(--second-text-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 16px;
+}
+
+.team-soc-list {
+    display: flex;
+    justify-content: center;
+}
+
+.team-soc-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.team-soc-link {
+    width: 44px;
+    height: 44px;
+    background-color: var(--basic-bgc);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: #AFB1B8;
+    transition-property: background-color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover, &:focus{
+        background-color: var(--color-accent);
+        fill: var(--basic-bgc);
+    }
+}

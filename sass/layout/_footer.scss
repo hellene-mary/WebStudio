@@ -1,0 +1,187 @@
+.footer-logo {
+    text-decoration: none;
+    color: var(--text-color-light);
+    font-family: 'Raleway', Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    @media screen and (min-width: 1200px){
+        font-size: 26px;
+        line-height: 1.19;
+    }
+}
+
+.footer>.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media screen and (min-width: 768px){
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+.footer {
+    background-color: var(--dark-bgc);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer-info{
+    margin-bottom: 60px;
+    text-align: center;
+    @media screen and (min-width: 768px){
+        margin-right: 165px;
+    }
+    @media screen and (min-width: 1200px){
+        margin-bottom: 0;
+        margin-right: 70px;
+        text-align: left;
+    }
+
+}
+
+.address {
+    color: var(--text-color-light);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    margin-top: 20px;
+}
+
+
+.footer-contacts-link {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover, &:focus {
+        color: var(--color-accent);
+    }
+}
+
+.footer-contacts-item {
+    margin-top: 8px;
+}
+
+.footer-text{
+    color: var(--text-color-light);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align: center;
+    @media screen and (min-width: 1200px){
+        text-align: left;
+    }
+}
+
+.footer-soc{
+    margin-bottom: 60px;
+    @media screen and (min-width: 1200px){
+        margin-right: 93px;
+        margin-bottom: 0;
+    }
+}
+
+.footer-soc-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.footer-soc-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.footer-soc-link{
+    width: 44px;
+    height: 44px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: var(--text-color-light);
+    transition-property: background-color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover, &:focus {
+        background-color: var(--color-accent);
+        fill: var(--text-color-light);
+    }
+}
+
+.subscribe-box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media screen and (min-width: 1200px){
+        flex-direction: row;
+    }
+}
+
+.subscribe-input{
+    margin: auto;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    display: block;
+    height: 50px;
+    width: 450px;
+    padding: 15px 16px;
+    color: #FFFFFF;
+    outline: none;
+    &:focus{
+        border-color: var(--color-accent);
+    }
+    @media screen and (max-width: 479px){
+        width: 300px;
+    }
+    @media screen and (min-width: 1200px){
+        width: 358px;
+        margin-bottom: 0;
+    }
+}
+
+.subscribe-btn{
+    color: var(--text-color-light);
+    background-color: var(--color-button);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    fill: var(--text-color-light);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    align-content: space-around;
+    &::after{
+        content: '';
+        width: 24px;
+        height: 24px;
+        background-image: url(../images/icon_send.svg);
+        margin-left: 10px;
+    }
+    @media screen and (min-width: 1200px){
+        margin: 0 auto 0 12px;
+    }
+}
+

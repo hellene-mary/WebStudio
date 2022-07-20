@@ -1,0 +1,98 @@
+.hero{
+    background-color: var(--dark-bgc);
+    background-image: 
+    linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+    url(../images/hero_bgimg-mob.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx){
+        background-image: 
+    linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+    url(../images/hero_bgimg-mob-2x.jpg);
+    }
+    @media screen and (min-width: 768px){
+        background-image: 
+        linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+        url(../images/hero_bgimg-tab.jpg);
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx){
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+    url(../images/hero_bgimg-tab-2x.jpg);
+    }
+    }
+    @media screen and (min-width: 1200px){
+        background-image: 
+        linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+        url(../images/hero_bgimg-desk.jpg);
+        @media (min-device-pixel-ratio: 2), 
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx){
+        background-image: 
+        linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+        url(../images/hero_bgimg-desk-2x.jpg);
+    }
+    }
+}
+
+.hero .container{
+    padding: 118px 10px;
+    width: 100%;
+    margin: auto;
+    @media screen and (min-width: 480px){
+        padding: 118px 60px;
+    }
+    @media screen and (min-width: 1200px){
+        padding: 200px 60px;
+    }
+}
+
+.hero-title {
+    color: var(--text-color-light);
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 1.62;
+    text-align: center;
+    width: 250px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (min-width: 480px){
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 1.62;
+        width: 360px;
+    }
+    @media screen and (min-width: 1200px){
+        font-size: 44px;
+        line-height: 1.36;
+        width: 696px;
+    }
+}
+
+.hero-button { 
+    color: var(--text-color-light);
+    background-color: var(--color-button);
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    margin: 0 auto;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    min-width: 200px;
+    height: 50px;
+} 
+
